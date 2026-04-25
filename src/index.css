@@ -20,6 +20,23 @@
   --color-on-surface: #1e2421;
 }
 
+@layer base {
+  body {
+    background-color: var(--color-surface);
+    color: var(--color-on-surface);
+    font-family: var(--font-body);
+  }
+
+  body::selection {
+    background-color: color-mix(in srgb, var(--color-secondary) 30%, transparent);
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-headline);
+    letter-spacing: -0.025em;
+  }
+}
+
 @layer utilities {
   .glass {
     @apply bg-white/10 backdrop-blur-md border border-white/20;
@@ -29,16 +46,6 @@
   }
   .text-shadow-strong {
     text-shadow: 0 4px 12px rgba(0,0,0,0.5);
-  }
-}
-
-@layer base {
-  body {
-    @apply bg-surface text-on-surface font-body selection:bg-secondary/30;
-  }
-  
-  h1, h2, h3, h4, h5, h6 {
-    @apply font-headline tracking-tight;
   }
 }
 

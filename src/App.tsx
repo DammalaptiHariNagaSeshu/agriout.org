@@ -249,15 +249,15 @@ const ProblemSection = () => (
 );
 
 const SolutionSection = () => (
-  <section id="solution" className="py-24 bg-primary text-white relative overflow-hidden">
+  <section id="solution" className="py-24 bg-surface text-on-surface relative overflow-hidden">
     <div className="absolute top-0 left-0 w-full h-full opacity-5 pointer-events-none">
-       <div className="absolute top-[-10%] left-[-10%] w-[40%] h-[40%] bg-secondary rounded-full blur-[120px]"></div>
-       <div className="absolute bottom-[-10%] right-[-10%] w-[40%] h-[40%] bg-white rounded-full blur-[120px]"></div>
+       <div className="absolute top-[-10%] left-[-10%] w-[40%] h-[40%] bg-secondary/10 rounded-full blur-[120px]"></div>
+       <div className="absolute bottom-[-10%] right-[-10%] w-[40%] h-[40%] bg-primary/10 rounded-full blur-[120px]"></div>
     </div>
 
     <div className="max-w-7xl mx-auto px-6 relative z-10">
       <div className="text-center mb-20">
-        <h2 className="text-4xl md:text-5xl font-bold mb-6">How AgriOut Helps</h2>
+        <h2 className="text-4xl md:text-5xl font-bold text-primary mb-6">How AgriOut Helps</h2>
         <div className="w-24 h-1.5 bg-secondary mx-auto rounded-full"></div>
       </div>
 
@@ -267,26 +267,26 @@ const SolutionSection = () => (
           initial={{ opacity: 0, x: -30 }}
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true }}
-          className="bg-white/10 backdrop-blur-xl p-10 rounded-[40px] border border-white/10"
+          className="bg-white p-10 rounded-[40px] border border-stone-100 sunlight-shadow"
         >
           <div className="flex items-center gap-4 mb-8">
             <div className="w-14 h-14 rounded-2xl bg-secondary flex items-center justify-center">
               <Tractor className="w-8 h-8 text-white" />
             </div>
-            <h3 className="text-3xl font-bold">For Farmers</h3>
+            <h3 className="text-3xl font-bold text-primary">For Farmers</h3>
           </div>
           <ul className="space-y-6">
             <li className="flex items-start gap-4">
-              <div className="mt-1 bg-green-500/20 p-1 rounded-full"><CheckCircle2 className="w-5 h-5 text-green-400" /></div>
-              <p className="text-xl">List products (grains, vegetables, fruits) with ease.</p>
+              <div className="mt-1 bg-green-500/10 p-1 rounded-full"><CheckCircle2 className="w-5 h-5 text-green-600" /></div>
+              <p className="text-xl text-on-surface-variant">List products (grains, vegetables, fruits) with ease.</p>
             </li>
             <li className="flex items-start gap-4">
-              <div className="mt-1 bg-green-500/20 p-1 rounded-full"><CheckCircle2 className="w-5 h-5 text-green-400" /></div>
-              <p className="text-xl">Reach companies directly without intermediaries.</p>
+              <div className="mt-1 bg-green-500/10 p-1 rounded-full"><CheckCircle2 className="w-5 h-5 text-green-600" /></div>
+              <p className="text-xl text-on-surface-variant">Reach companies directly without intermediaries.</p>
             </li>
             <li className="flex items-start gap-4">
-              <div className="mt-1 bg-green-500/20 p-1 rounded-full"><CheckCircle2 className="w-5 h-5 text-green-400" /></div>
-              <p className="text-xl">Full control over pricing and product visibility.</p>
+              <div className="mt-1 bg-green-500/10 p-1 rounded-full"><CheckCircle2 className="w-5 h-5 text-green-600" /></div>
+              <p className="text-xl text-on-surface-variant">Full control over pricing and product visibility.</p>
             </li>
           </ul>
         </motion.div>
@@ -296,26 +296,26 @@ const SolutionSection = () => (
           initial={{ opacity: 0, x: 30 }}
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true }}
-          className="bg-white/10 backdrop-blur-xl p-10 rounded-[40px] border border-white/10"
+          className="bg-white p-10 rounded-[40px] border border-stone-100 sunlight-shadow"
         >
           <div className="flex items-center gap-4 mb-8">
-            <div className="w-14 h-14 rounded-2xl bg-white/20 flex items-center justify-center">
+            <div className="w-14 h-14 rounded-2xl bg-primary flex items-center justify-center">
               <Building2 className="w-8 h-8 text-white" />
             </div>
-            <h3 className="text-3xl font-bold">For Companies</h3>
+            <h3 className="text-3xl font-bold text-primary">For Companies</h3>
           </div>
           <ul className="space-y-6">
             <li className="flex items-start gap-4">
-              <div className="mt-1 bg-green-500/20 p-1 rounded-full"><CheckCircle2 className="w-5 h-5 text-green-400" /></div>
-              <p className="text-xl">Access multiple farmers in one centralized place.</p>
+              <div className="mt-1 bg-green-500/10 p-1 rounded-full"><CheckCircle2 className="w-5 h-5 text-green-600" /></div>
+              <p className="text-xl text-on-surface-variant">Access multiple farmers in one centralized place.</p>
             </li>
             <li className="flex items-start gap-4">
-              <div className="mt-1 bg-green-500/20 p-1 rounded-full"><CheckCircle2 className="w-5 h-5 text-green-400" /></div>
-              <p className="text-xl">Compare products and prices in real-time.</p>
+              <div className="mt-1 bg-green-500/10 p-1 rounded-full"><CheckCircle2 className="w-5 h-5 text-green-600" /></div>
+              <p className="text-xl text-on-surface-variant">Compare products and prices in real-time.</p>
             </li>
             <li className="flex items-start gap-4">
-              <div className="mt-1 bg-green-500/20 p-1 rounded-full"><CheckCircle2 className="w-5 h-5 text-green-400" /></div>
-              <p className="text-xl">Buy fresh produce directly from the source.</p>
+              <div className="mt-1 bg-green-500/10 p-1 rounded-full"><CheckCircle2 className="w-5 h-5 text-green-600" /></div>
+              <p className="text-xl text-on-surface-variant">Buy fresh produce directly from the source.</p>
             </li>
           </ul>
         </motion.div>
@@ -355,36 +355,31 @@ const HowItWorks = () => (
 );
 
 const VisionSection = () => (
-  <section id="vision" className="relative py-32 overflow-hidden">
-    <div className="absolute inset-0 z-0">
-      <img src={visionImage} alt="Future of Agriculture" className="w-full h-full object-cover" />
-      <div className="absolute inset-0 bg-primary/80 backdrop-blur-sm"></div>
-    </div>
-
-    <div className="relative z-10 max-w-5xl mx-auto px-6 text-center text-white">
+  <section id="vision" className="py-24 bg-stone-50 overflow-hidden relative">
+    <div className="max-w-5xl mx-auto px-6 text-center">
       <motion.div
         initial={{ opacity: 0, scale: 0.9 }}
         whileInView={{ opacity: 1, scale: 1 }}
         viewport={{ once: true }}
       >
         <Sparkles className="w-12 h-12 text-secondary mx-auto mb-8 animate-pulse" />
-        <h2 className="text-4xl md:text-6xl font-bold mb-12">Our Vision</h2>
+        <h2 className="text-4xl md:text-6xl font-bold mb-12 text-primary">Our Vision</h2>
         
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          <div className="bg-white/10 backdrop-blur-md p-8 rounded-3xl border border-white/20">
+          <div className="bg-white p-8 rounded-3xl border border-stone-100 sunlight-shadow">
             <TrendingUp className="w-10 h-10 text-secondary mx-auto mb-6" />
-            <h3 className="text-xl font-bold mb-4">Empower Farmers</h3>
-            <p className="text-stone-300">Economically uplift the backbone of our society through fair trade.</p>
+            <h3 className="text-xl font-bold mb-4 text-primary">Empower Farmers</h3>
+            <p className="text-on-surface-variant">Economically uplift the backbone of our society through fair trade.</p>
           </div>
-          <div className="bg-white/10 backdrop-blur-md p-8 rounded-3xl border border-white/20">
+          <div className="bg-white p-8 rounded-3xl border border-stone-100 sunlight-shadow">
             <Globe className="w-10 h-10 text-secondary mx-auto mb-6" />
-            <h3 className="text-xl font-bold mb-4">Transparency</h3>
-            <p className="text-stone-300">Increase pricing clarity and market integrity for everyone.</p>
+            <h3 className="text-xl font-bold mb-4 text-primary">Transparency</h3>
+            <p className="text-on-surface-variant">Increase pricing clarity and market integrity for everyone.</p>
           </div>
-          <div className="bg-white/10 backdrop-blur-md p-8 rounded-3xl border border-white/20">
+          <div className="bg-white p-8 rounded-3xl border border-stone-100 sunlight-shadow">
             <Zap className="w-10 h-10 text-secondary mx-auto mb-6" />
-            <h3 className="text-xl font-bold mb-4">Digitize Trade</h3>
-            <p className="text-stone-300">Transform traditional agricultural commerce into a modern digital era.</p>
+            <h3 className="text-xl font-bold mb-4 text-primary">Digitize Trade</h3>
+            <p className="text-on-surface-variant">Transform traditional agricultural commerce into a modern digital era.</p>
           </div>
         </div>
       </motion.div>
@@ -424,7 +419,7 @@ const LeadershipSection = () => (
           </div>
         </motion.div>
 
-        {/* Sita Ravamma */}
+        {/* Sita Ravamma Dammalapati */}
         <motion.div 
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -439,7 +434,7 @@ const LeadershipSection = () => (
               <Handshake className="w-10 h-10 text-secondary" />
             </div>
             
-            <h3 className="text-2xl font-bold text-primary mb-1">Sita Ravamma</h3>
+            <h3 className="text-2xl font-bold text-primary mb-1">Sita Ravamma Dammalapati</h3>
             <p className="text-secondary font-bold text-[10px] tracking-[0.2em] uppercase mb-6">MANAGING DIRECTOR | 30+ YEARS IN FARMING</p>
             
             <p className="text-lg text-on-surface-variant bg-stone-50/50 p-6 rounded-2xl border border-stone-100/50 leading-relaxed italic font-medium">
