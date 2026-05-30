@@ -92,12 +92,17 @@ document.addEventListener('DOMContentLoaded', () => {
                 }
 
                 const navbarHeight = 72; // height of sticky header
-                const targetPosition = targetElement.getBoundingClientRect().top + window.scrollY - navbarHeight;
-                
-                window.scrollTo({
-                    top: targetPosition,
-                    behavior: 'smooth'
-                });
+
+                // Home link → always scroll to the very top
+                if (targetId === '#home') {
+                    window.scrollTo({ top: 0, behavior: 'smooth' });
+                } else {
+                    const targetPosition = targetElement.getBoundingClientRect().top + window.scrollY - navbarHeight;
+                    window.scrollTo({
+                        top: targetPosition,
+                        behavior: 'smooth'
+                    });
+                }
 
                 // Highlight contact form fields if scrolling to contact
                 if (targetId === '#contact') {
@@ -164,4 +169,102 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     });
+
+    // 7. SMOOTH SCROLL FOR LOGO TO VERY TOP
+    const logoLinks = document.querySelectorAll('.navbar-logo, .footer-logo');
+    logoLinks.forEach(logo => {
+        logo.addEventListener('click', function(e) {
+            e.preventDefault();
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+    });
+
+    // 8. PRIVACY POLICY & TERMS OF SERVICE MODALS CONTROLLERS
+    const openPrivacy = document.getElementById('openPrivacy');
+    const openTerms = document.getElementById('openTerms');
+    const privacyModal = document.getElementById('privacyModal');
+    const termsModal = document.getElementById('termsModal');
+    const closePrivacy = document.getElementById('closePrivacy');
+    const closeTerms = document.getElementById('closeTerms');
+
+    function showModal(modal) {
+        modal.classList.add('active');
+        body.style.overflow = 'hidden';
+    }
+
+    function hideModal(modal) {
+        modal.classList.remove('active');
+        body.style.overflow = '';
+    }
+
+    if (openPrivacy && privacyModal) {
+        openPrivacy.addEventListener('click', (e) => {
+            e.preventDefault();
+            showModal(privacyModal);
+        });
+    }
+
+    if (openTerms && termsModal) {
+        openTerms.addEventListener('click', (e) => {
+            e.preventDefault();
+            showModal(termsModal);
+        });
+    }
+
+    if (closePrivacy && privacyModal) {
+        closePrivacy.addEventListener('click', () => {
+            hideModal(privacyModal);
+        });
+        
+        // Close modal if clicked outside card
+        privacyModal.addEventListener('click', (e) => {
+            if (e.target === privacyModal) {
+                hideModal(privacyModal);
+            }
+        });
+    }
+
+    if (closeTerms && termsModal) {
+        closeTerms.addEventListener('click', () => {
+            hideModal(termsModal);
+        });
+        
+        // Close modal if clicked outside card
+        termsModal.addEventListener('click', (e) => {
+            if (e.target === termsModal) {
+                hideModal(termsModal);
+            }
+        });
+    }
+
+    // Close on escape key
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape') {
+            if (privacyModal && privacyModal.classList.contains('active')) hideModal(privacyModal);
+            if (termsModal && termsModal.classList.contains('active')) hideModal(termsModal);
+        }
+    });
+
+    // 9. VIEWPORT-SENSITIVE SCROLL OBSERVER FOR FLOATING SOCIAL LINKS
+    const contactSection = document.getElementById('contact');
+    const floatingActions = document.querySelector('.floating-actions');
+    
+    if (contactSection && floatingActions) {
+        const contactObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    floatingActions.classList.add('active');
+                } else {
+                    floatingActions.classList.remove('active');
+                }
+            });
+        }, {
+            threshold: 0.05
+        });
+        
+        contactObserver.observe(contactSection);
+    }
 });

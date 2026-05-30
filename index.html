@@ -3,25 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Connecting Partner Farmers To Institutional Markets | Agri Out</title>
+    <title>AgriOut — Sourcing from Farmers, Serving with Trust</title>
     
     <!-- SEO Meta Tags -->
-    <meta name="description" content="Agri Out enables transparent farm procurement, immediate farmer settlements, and reliable institutional food supply — powered by village-level field operations.">
-    <meta name="keywords" content="agritech India, farm supply chain, direct procurement, agricultural network, rural operations, farm-to-business supply, institutional food sourcing, fresh produce supply India, agriout.org">
-    <meta name="author" content="Agri Out">
+    <meta name="description" content="AgriOut is a complete agricultural ecosystem. AgriOut.org trains, certifies, and empowers farmers, while AgriOut.com connects those verified farmers directly to buyers, processors, and exporters.">
+    <meta name="keywords" content="agritech, farmer certification, direct sourcing, agricultural marketplace, farm traceability, crop intelligence, agriout.org, agriout.com">
+    <meta name="author" content="AgriOut Ecosystem">
     
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://agriout.org">
-    <meta property="og:title" content="Connecting Partner Farmers To Institutional Markets | Agri Out">
-    <meta property="og:description" content="Agri Out enables transparent farm procurement, immediate farmer settlements, and reliable institutional food supply — powered by village-level field operations.">
+    <meta property="og:title" content="AgriOut — Sourcing from Farmers, Serving with Trust">
+    <meta property="og:description" content="AgriOut is a complete agricultural ecosystem. AgriOut.org trains, certifies, and empowers farmers, while AgriOut.com connects those verified farmers directly to buyers, processors, and exporters.">
     <meta property="og:image" content="hero_supply_chain.png">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="https://agriout.org">
-    <meta property="twitter:title" content="Connecting Partner Farmers To Institutional Markets | Agri Out">
-    <meta property="twitter:description" content="Agri Out enables transparent farm procurement, immediate farmer settlements, and reliable institutional food supply — powered by village-level field operations.">
+    <meta property="twitter:title" content="AgriOut — Sourcing from Farmers, Serving with Trust">
+    <meta property="twitter:description" content="AgriOut is a complete agricultural ecosystem. AgriOut.org trains, certifies, and empowers farmers, while AgriOut.com connects those verified farmers directly to buyers, processors, and exporters.">
     <meta property="twitter:image" content="hero_supply_chain.png">
 
     <!-- Favicons -->
@@ -35,6 +35,443 @@
 
     <!-- Stylesheets -->
     <link rel="stylesheet" href="style.css">
+
+    <!-- Premium Override Styles for Custom Components -->
+    <style>
+        .hero-floating-badge {
+            display: inline-flex;
+            align-items: center;
+            padding: 10px 20px;
+            background: rgba(45, 122, 31, 0.05);
+            border: 1px solid rgba(45, 122, 31, 0.15);
+            border-radius: 50px;
+            margin-top: 20px;
+            margin-bottom: 28px;
+            font-size: 0.9rem;
+            font-weight: 500;
+            color: var(--text-primary);
+            box-shadow: 0 4px 12px rgba(45, 122, 31, 0.03);
+            line-height: 1.4;
+        }
+        .hero-floating-badge strong {
+            color: var(--primary);
+        }
+
+        .problem-strip {
+            padding: 36px 24px;
+            border-top: 1px solid rgba(45, 122, 31, 0.08);
+            border-bottom: 1px solid rgba(45, 122, 31, 0.08);
+            background-color: var(--bg-tint);
+        }
+        .problem-strip .problem-text {
+            max-width: 950px;
+            margin: 0 auto;
+            font-size: 1.3rem;
+            font-weight: 600;
+            line-height: 1.6;
+            color: var(--text-primary);
+            font-style: italic;
+            text-align: center;
+        }
+
+        .ecosystem-card {
+            background-color: var(--bg-white);
+            border-radius: var(--border-radius-md);
+            padding: 40px;
+            box-shadow: var(--shadow-soft);
+            border: 1px solid rgba(45, 122, 31, 0.08);
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+            transition: var(--transition-smooth);
+        }
+        .ecosystem-card:hover {
+            transform: translateY(-6px);
+            box-shadow: var(--shadow-medium);
+        }
+        .ecosystem-card.org-card {
+            border-top: 5px solid var(--primary);
+        }
+        .ecosystem-card.com-card {
+            border-top: 5px solid var(--accent);
+        }
+        .ecosystem-card .card-header {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-bottom: 12px;
+        }
+        .ecosystem-card .card-icon {
+            font-size: 2rem;
+        }
+        .ecosystem-card .card-title {
+            font-family: var(--font-heading);
+            font-size: 1.35rem;
+            font-weight: 800;
+            color: var(--text-primary);
+            line-height: 1.3;
+        }
+        .ecosystem-card .card-tagline {
+            font-size: 1.1rem;
+            font-style: italic;
+            color: var(--primary);
+            margin-bottom: 16px;
+            font-weight: 600;
+        }
+        .ecosystem-card.com-card .card-tagline {
+            color: var(--accent);
+        }
+        .ecosystem-card .card-body {
+            font-size: 0.95rem;
+            color: var(--text-secondary);
+            line-height: 1.6;
+            margin-bottom: 20px;
+            flex-grow: 1;
+        }
+        .ecosystem-card .card-outcome {
+            background: rgba(45, 122, 31, 0.04);
+            border-left: 3px solid var(--primary);
+            padding: 12px 16px;
+            border-radius: 0 var(--border-radius-sm) var(--border-radius-sm) 0;
+            font-size: 0.95rem;
+            color: var(--text-primary);
+            margin-bottom: 24px;
+            line-height: 1.5;
+        }
+        .ecosystem-card.com-card .card-outcome {
+            background: rgba(138, 122, 0, 0.04);
+            border-left-color: var(--accent);
+        }
+        .ecosystem-card .card-bullets {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        .ecosystem-card .card-bullets li {
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+            position: relative;
+            padding-left: 20px;
+            line-height: 1.4;
+        }
+        .ecosystem-card .card-bullets li::before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: var(--primary);
+            font-weight: bold;
+        }
+        .ecosystem-card.com-card .card-bullets li::before {
+            color: var(--accent);
+        }
+
+        .bridge-text {
+            font-size: 1.25rem;
+            font-weight: 600;
+            color: var(--text-primary);
+        }
+        .bridge-text strong {
+            color: var(--primary);
+        }
+
+        /* Comparison Table Section */
+        .table-responsive {
+            overflow-x: auto;
+            width: 100%;
+            margin-top: 24px;
+            border-radius: var(--border-radius-md);
+            box-shadow: var(--shadow-soft);
+            border: var(--border-light);
+        }
+        .comparison-table {
+            width: 100%;
+            border-collapse: collapse;
+            text-align: left;
+            background-color: var(--bg-white);
+            min-width: 800px;
+        }
+        .comparison-table th, .comparison-table td {
+            padding: 18px 24px;
+            border-bottom: 1px solid rgba(45, 122, 31, 0.06);
+            font-size: 0.95rem;
+            vertical-align: middle;
+            line-height: 1.5;
+        }
+        .comparison-table th {
+            font-family: var(--font-heading);
+            font-weight: 700;
+            background-color: rgba(45, 122, 31, 0.03);
+            color: var(--text-primary);
+            font-size: 1.05rem;
+        }
+        .comparison-table th.col-org {
+            color: var(--primary);
+            background-color: rgba(45, 122, 31, 0.05);
+        }
+        .comparison-table th.col-com {
+            color: var(--accent);
+            background-color: rgba(138, 122, 0, 0.05);
+        }
+        .comparison-table td.col-org {
+            background-color: rgba(45, 122, 31, 0.01);
+            color: var(--text-primary);
+        }
+        .comparison-table td.col-com {
+            background-color: rgba(138, 122, 0, 0.01);
+            color: var(--text-primary);
+        }
+        .comparison-table tr:hover {
+            background-color: rgba(45, 122, 31, 0.01);
+        }
+        .comparison-table tr:last-child td {
+            border-bottom: none;
+        }
+
+        /* Accent Buttons */
+        .btn-accent {
+            background-color: var(--accent);
+            color: var(--text-light);
+            border: 2px solid transparent;
+        }
+        .btn-accent:hover {
+            background-color: var(--accent-hover);
+            transform: translateY(-2px);
+            box-shadow: 0 8px 20px rgba(138, 122, 0, 0.2);
+            color: var(--text-light);
+        }
+
+        .marketplace-benefits {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 24px;
+        }
+        @media (min-width: 768px) {
+            .marketplace-benefits {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+        .benefit-strip-card {
+            background: var(--bg-white);
+            border: var(--border-light);
+            border-radius: var(--border-radius-sm);
+            padding: 24px;
+            box-shadow: var(--shadow-soft);
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            align-items: flex-start;
+            transition: var(--transition-smooth);
+        }
+        .benefit-strip-card:hover {
+            transform: translateY(-3px);
+            box-shadow: var(--shadow-medium);
+        }
+        .benefit-strip-card.farmer-benefit {
+            border-left: 4px solid var(--primary);
+        }
+        .benefit-strip-card.buyer-benefit {
+            border-left: 4px solid var(--accent);
+        }
+        .benefit-strip-card p {
+            font-size: 1rem;
+            font-weight: 500;
+            color: var(--text-primary);
+            line-height: 1.5;
+        }
+        .badge-mini {
+            display: inline-block;
+            padding: 4px 10px;
+            border-radius: 4px;
+            font-size: 0.75rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            flex-shrink: 0;
+        }
+        .badge-mini.primary {
+            background-color: rgba(45, 122, 31, 0.1);
+            color: var(--primary);
+        }
+        .badge-mini.gold {
+            background-color: rgba(138, 122, 0, 0.1);
+            color: var(--accent);
+        }
+
+        /* Metric Display styles */
+        .metric-number-display {
+            font-family: var(--font-heading);
+            font-size: 3.2rem;
+            font-weight: 800;
+            color: var(--primary);
+            line-height: 1.1;
+            margin-bottom: 12px;
+            letter-spacing: -1.5px;
+        }
+        .benefit-card:nth-child(even) .metric-number-display {
+            color: var(--accent);
+        }
+
+        /* Premium Modal Overlays */
+        .modal-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(26, 46, 22, 0.4);
+            backdrop-filter: blur(8px);
+            z-index: 2000;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            visibility: hidden;
+            transition: opacity 0.4s ease, visibility 0.4s ease;
+            padding: 24px;
+        }
+        .modal-overlay.active {
+            opacity: 1;
+            visibility: visible;
+        }
+        .modal-card {
+            background-color: var(--bg-white);
+            border-radius: var(--border-radius-md);
+            border: 1px solid rgba(45, 122, 31, 0.12);
+            box-shadow: 0 30px 60px -15px rgba(26, 46, 22, 0.2);
+            width: 100%;
+            max-width: 650px;
+            max-height: 80vh;
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            transform: translateY(30px);
+            transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+            overflow: hidden;
+        }
+        .modal-overlay.active .modal-card {
+            transform: translateY(0);
+        }
+        .modal-close {
+            position: absolute;
+            top: 20px;
+            right: 24px;
+            background: rgba(45, 122, 31, 0.05);
+            border: none;
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            font-size: 1.5rem;
+            color: var(--text-primary);
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: var(--transition-fast);
+            z-index: 10;
+        }
+        .modal-close:hover {
+            background-color: rgba(45, 122, 31, 0.1);
+            color: var(--primary);
+        }
+        .modal-header {
+            padding: 32px 32px 20px 32px;
+            border-bottom: 1px solid rgba(45, 122, 31, 0.06);
+        }
+        .modal-title {
+            font-family: var(--font-heading);
+            font-size: 1.6rem;
+            font-weight: 800;
+            color: var(--text-primary);
+            margin-bottom: 4px;
+        }
+        .modal-subtitle {
+            font-size: 0.85rem;
+            color: var(--text-secondary);
+            font-weight: 500;
+        }
+        .modal-body {
+            padding: 24px 32px 40px 32px;
+            overflow-y: auto;
+            line-height: 1.6;
+        }
+        .modal-body h3 {
+            font-family: var(--font-heading);
+            font-size: 1.1rem;
+            font-weight: 700;
+            color: var(--text-primary);
+            margin-top: 24px;
+            margin-bottom: 8px;
+        }
+        .modal-body h3:first-of-type {
+            margin-top: 0;
+        }
+        .modal-body p {
+            font-size: 0.95rem;
+            color: var(--text-secondary);
+            margin-bottom: 16px;
+        }
+        .modal-body p:last-child {
+            margin-bottom: 0;
+        }
+        .modal-body a {
+            color: var(--primary);
+            font-weight: 600;
+            text-decoration: underline;
+        }
+        .modal-body a:hover {
+            color: var(--primary-hover);
+        }
+
+        /* Reposition floating actions to be hidden by default, and shown fixed at vertical center when active */
+        .floating-actions {
+            position: fixed !important;
+            top: 50% !important;
+            right: 24px !important;
+            bottom: auto !important;
+            transform: translateY(-50%) translateX(100px) !important;
+            display: flex;
+            flex-direction: column;
+            gap: 14px;
+            z-index: 999;
+            opacity: 0 !important;
+            visibility: hidden !important;
+            pointer-events: none !important;
+            transition: opacity 0.5s cubic-bezier(0.16, 1, 0.3, 1), transform 0.5s cubic-bezier(0.16, 1, 0.3, 1), visibility 0.5s ease !important;
+        }
+        .floating-actions.active {
+            opacity: 1 !important;
+            visibility: visible !important;
+            pointer-events: auto !important;
+            transform: translateY(-50%) translateX(0) !important;
+        }
+
+        /* Floating action buttons up-right external link arrows */
+        .floating-btn {
+            position: relative;
+        }
+        .floating-btn .floating-arrow {
+            position: absolute;
+            top: -2px;
+            right: -2px;
+            background-color: var(--bg-white);
+            color: var(--text-primary);
+            border-radius: 50%;
+            width: 18px;
+            height: 18px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 3px 8px rgba(26, 46, 22, 0.15);
+            border: 1px solid rgba(45, 122, 31, 0.1);
+            transition: var(--transition-fast);
+        }
+        .floating-btn:hover .floating-arrow {
+            transform: scale(1.1);
+            color: var(--primary);
+        }
+    </style>
 </head>
 <body>
 
@@ -42,25 +479,25 @@
     <nav class="navbar" id="home">
         <div class="navbar-container">
             <a href="#home" class="navbar-logo">
-                <img src="logo.png" alt="Agri Out Icon" class="logo-icon">
-                <img src="text.png" alt="Agri Out Wordmark" class="logo-text">
+                <img src="logo.png" alt="AgriOut Icon" class="logo-icon">
+                <img src="text.png" alt="AgriOut Wordmark" class="logo-text">
             </a>
             
             <div class="navbar-menu-overlay" id="menuOverlay"></div>
             <ul class="navbar-links" id="navbarLinks">
+                <li><a href="#home" class="nav-link">Home</a></li>
                 <li><a href="#about" class="nav-link">About</a></li>
                 <li><a href="#process" class="nav-link">How It Works</a></li>
-                <li><a href="#farmers" class="nav-link">For Farmers</a></li>
-                <li><a href="#buyers" class="nav-link">For Buyers</a></li>
-                <li><a href="#industries" class="nav-link">Industries</a></li>
-                <li><a href="#contact" class="nav-link">Contact</a></li>
+                <li><a href="#for-farmers" class="nav-link">For Farmers</a></li>
+                <li><a href="#marketplace" class="nav-link">For Buyers</a></li>
+                <li><a href="#audience" class="nav-link">Marketplace</a></li>
                 <li class="mobile-cta-li">
-                    <a href="#contact" class="btn btn-primary btn-navbar mobile-cta">Partner With Us</a>
+                    <a href="#contact" class="btn btn-primary btn-navbar mobile-cta">Join the Ecosystem</a>
                 </li>
             </ul>
 
             <div class="navbar-actions">
-                <a href="#contact" class="btn btn-primary btn-navbar desktop-cta">Partner With Us</a>
+                <a href="#contact" class="btn btn-primary btn-navbar desktop-cta">Join the Ecosystem</a>
                 <button class="hamburger" id="hamburgerMenu" aria-label="Toggle menu" aria-expanded="false">
                     <span class="bar bar-1"></span>
                     <span class="bar bar-2"></span>
@@ -74,677 +511,601 @@
     <header class="hero-section">
         <div class="container hero-container">
             <div class="hero-content scroll-reveal">
-                <span class="section-badge gold">Direct From Farms. Built For Scale.</span>
-                <h1 class="hero-title">Connecting Partner Farmers To Institutional Markets</h1>
+                <h1 class="hero-title">Sourcing from Farmers, Serving with Trust</h1>
                 <p class="hero-subtitle">
-                    Agri Out enables transparent farm procurement, immediate farmer settlements, and reliable institutional food supply — powered by village-level field operations.
+                    AgriOut is a complete agricultural ecosystem — AgriOut.org trains, certifies, and empowers farmers, while AgriOut.com connects those verified farmers directly to buyers, processors, and exporters. No middlemen. No guesswork. Just trusted, traceable produce.
                 </p>
+                
+                <!-- Floating badge / pill below subheadline -->
+                <div class="hero-floating-badge">
+                    <span class="badge-content">🌱 <strong>AgriOut.org</strong> builds farmer capability &rarr; 🛒 <strong>AgriOut.com</strong> converts it into market opportunity</span>
+                </div>
+                
                 <div class="hero-ctas">
-                    <a href="#contact" class="btn btn-primary">Partner With Us</a>
-                    <a href="#contact" class="btn btn-secondary">Become a Supply Partner</a>
+                    <a href="#process" class="btn btn-primary">I'm a Farmer — Join AgriOut.org</a>
+                    <a href="#marketplace" class="btn btn-accent">I'm a Buyer — Explore AgriOut.com</a>
+                    <a href="#contact" class="btn btn-secondary">Partner With Us</a>
                 </div>
             </div>
             <div class="hero-visual scroll-reveal">
-                <img src="hero_supply_chain.png" alt="Agri Out farm-to-city supply chain network" class="hero-img">
+                <img src="hero_supply_chain.png" alt="AgriOut farm-to-city supply chain network" class="hero-img">
             </div>
         </div>
     </header>
 
-    <!-- SECTION 3 — ABOUT AGRI OUT -->
-    <section class="about-section section-padding bg-tint" id="about">
+    <!-- PROBLEM STATEMENT STRIP -->
+    <div class="problem-strip scroll-reveal">
+        <div class="container">
+            <p class="problem-text">
+                "Millions of farmers grow quality crops — but lack verified credentials, market access, and fair prices. AgriOut was built to change that."
+            </p>
+        </div>
+    </div>
+
+    <!-- SECTION 3 — WHAT IS AGRIOUT? / ECOSYSTEM OVERVIEW -->
+    <section class="about-section section-padding" id="about">
         <div class="container">
             <div class="section-header text-center scroll-reveal">
-                <span class="section-label">Who We Are</span>
-                <h2 class="section-title">A Supply Chain Built From The Ground Up</h2>
+                <span class="section-label">The AgriOut Ecosystem</span>
+                <h2 class="section-title">One Ecosystem. Two Platforms. One Mission.</h2>
+                <p class="lead-text" style="max-width: 850px; margin: 0 auto;">
+                    AgriOut is not just an app or a marketplace. It is a complete trust infrastructure for agriculture — designed to solve both sides of the farming problem: the farmer who cannot prove quality, and the buyer who cannot trust what they're buying.
+                </p>
             </div>
-            <div class="about-grid grid-50-50 align-center">
-                <div class="about-copy scroll-reveal">
-                    <p class="lead-text">
-                        Agri Out is building a scalable agricultural procurement infrastructure focused on direct farm sourcing, transparent quality standards, and reliable institutional supply — starting from the village level.
+            
+            <div class="about-grid grid-50-50 scroll-reveal" style="align-items: stretch;">
+                <!-- Left Card — AgriOut.org -->
+                <div class="ecosystem-card org-card">
+                    <div class="card-header">
+                        <span class="card-icon">🌱</span>
+                        <h3 class="card-title">AgriOut.org — Farmer Development Platform</h3>
+                    </div>
+                    <p class="card-tagline">"We grow the farmer first."</p>
+                    <p class="card-body">
+                        AgriOut.org is a non-commercial, impact-driven platform. It gives farmers structured education, crop intelligence, weather alerts, digital farm records, and QR-based quality certification — building the knowledge, credibility, and track record every farmer deserves.
                     </p>
-                    <p class="body-text">
-                        We operate through a field-based model: our team works directly with partner farmers, runs branch-level quality checks, and delivers verified produce to institutional buyers across hotels, catering services, and large-scale events.
+                    <div class="card-outcome">
+                        <strong>Outcome:</strong> A trained, certified, and trusted farmer — ready for the market.
+                    </div>
+                    <ul class="card-bullets">
+                        <li>Farmer Education (IVR, WhatsApp, local language)</li>
+                        <li>Crop Intelligence & Seasonal Planning</li>
+                        <li>Hyperlocal Weather & Disease Alerts</li>
+                        <li>Digital Farm Record System</li>
+                        <li>QR-Based Quality Certification (vendor-neutral)</li>
+                        <li>Agronomist & Farmer Champion Network</li>
+                        <li>Input Recommendations</li>
+                        <li>Input Support Program (Coming Soon)</li>
+                        <li>Farmer Reliability Score</li>
+                    </ul>
+                </div>
+                
+                <!-- Right Card — AgriOut.com -->
+                <div class="ecosystem-card com-card">
+                    <div class="card-header">
+                        <span class="card-icon">🛒</span>
+                        <h3 class="card-title">AgriOut.com — Agricultural Marketplace</h3>
+                    </div>
+                    <p class="card-tagline">"We take that trust to market."</p>
+                    <p class="card-body">
+                        AgriOut.com is a commercial marketplace exclusively for AgriOut.org-verified farmers. Buyers — whether processors, exporters, retailers, or direct consumers — can source quality-certified produce with full traceability, transparent pricing, and zero dependency on intermediaries.
                     </p>
+                    <div class="card-outcome">
+                        <strong>Outcome:</strong> Better prices for farmers. Guaranteed quality for buyers. Trust for everyone.
+                    </div>
+                    <ul class="card-bullets">
+                        <li>Verified Farmer Storefronts</li>
+                        <li>Quality-Certified Produce Listings</li>
+                        <li>Bulk Procurement & Contract Farming</li>
+                        <li>Real-Time Buyer Inquiries</li>
+                        <li>Logistics Coordination</li>
+                        <li>Digital Payments & Order Tracking</li>
+                        <li>Direct Farm-to-Buyer Transactions</li>
+                        <li>Transparent Pricing — No Hidden Middlemen</li>
+                    </ul>
                 </div>
-                <div class="about-stats scroll-reveal">
-                    <div class="stat-card">
-                        <div class="stat-icon-wrapper green">
-                            <!-- SVG: Sheaf of wheat (Direct farm procurement) -->
-                            <svg viewBox="0 0 24 24" width="32" height="32" stroke="#2D7A1F" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                                <path d="M12 2v20M8 8c0-3.3 1.8-6 4-6s4 2.7 4 6-1.8 6-4 6-4-2.7-4-6zm-4 6c0-2.2 1.2-4 2.6-4 1.5 0 2.6 1.8 2.6 4s-1.2 4-2.6 4c-1.5 0-2.6-1.8-2.6-4zm8 0c0-2.2 1.2-4 2.6-4 1.5 0 2.6 1.8 2.6 4s-1.2 4-2.6 4c-1.5 0-2.6-1.8-2.6-4z"></path>
-                            </svg>
-                        </div>
-                        <div class="stat-info">
-                            <h3 class="stat-number">100% Direct</h3>
-                            <p class="stat-label">Direct farm procurement</p>
-                        </div>
-                    </div>
-                    <div class="stat-card">
-                        <div class="stat-icon-wrapper gold">
-                            <!-- SVG: Checkmark badge (Branch-verified quality) -->
-                            <svg viewBox="0 0 24 24" width="32" height="32" stroke="#8A7A00" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                                <circle cx="12" cy="12" r="9"></circle>
-                                <polyline points="9 11 12 14 22 4"></polyline>
-                                <path d="M21 12c0 4.97-4.03 9-9 9s-9-4.03-9-9 4.03-9 9-9"></path>
-                            </svg>
-                        </div>
-                        <div class="stat-info">
-                            <h3 class="stat-number">Branch Checked</h3>
-                            <p class="stat-label">Branch-verified quality</p>
-                        </div>
-                    </div>
-                    <div class="stat-card">
-                        <div class="stat-icon-wrapper green">
-                            <!-- SVG: Lightning bolt (Immediate settlement) -->
-                            <svg viewBox="0 0 24 24" width="32" height="32" stroke="#2D7A1F" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                                <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
-                            </svg>
-                        </div>
-                        <div class="stat-info">
-                            <h3 class="stat-number">On-the-spot</h3>
-                            <p class="stat-label">Immediate settlement</p>
-                        </div>
-                    </div>
-                </div>
+            </div>
+
+            <!-- Bridge line centered below both cards -->
+            <div class="bridge-container text-center scroll-reveal" style="margin-top: 48px; width: 100%;">
+                <p class="bridge-text">
+                    <strong>AgriOut.org</strong> builds the farmer. <strong>AgriOut.com</strong> monetizes that trust.
+                </p>
             </div>
         </div>
     </section>
 
-    <!-- SECTION 4 — HOW IT WORKS -->
+    <!-- SECTION — KEY DIFFERENCE -->
+    <section class="difference-section section-padding bg-tint" id="difference">
+        <div class="container">
+            <div class="section-header text-center scroll-reveal">
+                <span class="section-label">AgriOut.org vs AgriOut.com</span>
+                <h2 class="section-title">Two Platforms. Distinct Roles. One Shared Goal.</h2>
+                <p class="lead-text" style="max-width: 800px; margin: 0 auto;">
+                    Many visitors ask — what is the difference between AgriOut.org and AgriOut.com? Here is the clearest answer:
+                </p>
+            </div>
+            
+            <div class="table-responsive scroll-reveal">
+                <table class="comparison-table">
+                    <thead>
+                        <tr>
+                            <th>Feature</th>
+                            <th class="col-org">AgriOut.org 🌱</th>
+                            <th class="col-com">AgriOut.com 🛒</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Purpose</strong></td>
+                            <td class="col-org">Farmer Development</td>
+                            <td class="col-com">Market Access & Commerce</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Who it serves</strong></td>
+                            <td class="col-org">Farmers</td>
+                            <td class="col-com">Farmers + Buyers</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Nature</strong></td>
+                            <td class="col-org">Impact-driven, non-commercial</td>
+                            <td class="col-com">Revenue-driven, commercial</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Core output</strong></td>
+                            <td class="col-org">Trained & certified farmers</td>
+                            <td class="col-com">Verified produce transactions</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Key activities</strong></td>
+                            <td class="col-org">Education, certification, records, support</td>
+                            <td class="col-com">Listings, procurement, payments, logistics</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Entry point</strong></td>
+                            <td class="col-org">Any farmer can join free</td>
+                            <td class="col-com">Only AgriOut.org-verified farmers can list</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Result for farmer</strong></td>
+                            <td class="col-org">Knowledge, credibility, quality proof</td>
+                            <td class="col-com">Better prices, wider buyers, direct sales</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Result for buyer</strong></td>
+                            <td class="col-org">—</td>
+                            <td class="col-com">Trusted, certified, traceable produce</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            
+            <div class="closing-line text-center scroll-reveal" style="margin-top: 36px;">
+                <p class="closing-text" style="font-size: 1.15rem; font-weight: 600; color: var(--text-primary);">
+                    <strong>AgriOut.org</strong> is the foundation. <strong>AgriOut.com</strong> is the opportunity built on it.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 4 — HOW AGRIOUT.ORG WORKS -->
     <section class="process-section section-padding" id="process">
         <div class="container">
             <div class="section-header text-center scroll-reveal">
-                <span class="section-label">Our Process</span>
-                <h2 class="section-title">From Field To Institution — In Five Steps</h2>
+                <span class="section-label">AgriOut.org — How It Works</span>
+                <h2 class="section-title">8 Ways We Develop Every Farmer</h2>
+                <p class="lead-text" style="max-width: 750px; margin: 0 auto;">
+                    From first lesson to first sale — AgriOut.org walks beside every farmer.
+                </p>
             </div>
             
-            <div class="process-steps scroll-reveal">
+            <div class="process-steps scroll-reveal" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 24px;">
                 <!-- Step 1 -->
                 <div class="step-card">
                     <div class="step-number-badge">01</div>
                     <div class="step-icon">
-                        <!-- SVG Map & Pin (Field Sourcing) -->
-                        <svg viewBox="0 0 24 24" width="40" height="40" stroke="#2D7A1F" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                            <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"></path>
-                            <circle cx="12" cy="10" r="3"></circle>
+                        <!-- Book icon -->
+                        <svg viewBox="0 0 24 24" width="36" height="36" stroke="#2D7A1F" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
+                            <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
                         </svg>
                     </div>
-                    <h3 class="step-headline">Field Procurement</h3>
-                    <p class="step-description">Our operations team visits partner farmers, checks crop availability, and procures directly at the farm level.</p>
+                    <h3 class="step-headline">Farmer Education</h3>
+                    <p class="step-description">
+                        <strong>Feature:</strong> Weekly IVR lessons, WhatsApp videos, field demonstrations, workshops in local languages.<br><br>
+                        <strong>Plain meaning:</strong> Farmers learn modern techniques without needing internet access or formal literacy.
+                    </p>
                 </div>
                 
                 <!-- Step 2 -->
                 <div class="step-card">
                     <div class="step-number-badge">02</div>
                     <div class="step-icon">
-                        <!-- SVG Lab/Verification Clipboard -->
-                        <svg viewBox="0 0 24 24" width="40" height="40" stroke="#8A7A00" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                            <path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path>
-                            <rect x="8" y="2" width="8" height="4" rx="1" ry="1"></rect>
-                            <path d="m9 14 2 2 4-4"></path>
+                        <!-- Cloud/Sun icon -->
+                        <svg viewBox="0 0 24 24" width="36" height="36" stroke="#8A7A00" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M19 16.9A5 5 0 0 0 18 7h-1.26a8 8 0 1 0-11.62 8.58"></path>
                         </svg>
                     </div>
-                    <h3 class="step-headline">Branch Quality Check</h3>
-                    <p class="step-description">Produce is transported to the nearest Agri Out branch for standardised quality verification.</p>
+                    <h3 class="step-headline">Crop Intelligence + Weather Alerts</h3>
+                    <p class="step-description">
+                        <strong>Feature:</strong> Seasonal crop planning, disease alerts, market trend insights, hyperlocal weather warnings — frost, heatwave, rainfall.<br><br>
+                        <strong>Plain meaning:</strong> No harvest is lost to a surprise. Farmers are always one step ahead of the season.
+                    </p>
                 </div>
                 
                 <!-- Step 3 -->
                 <div class="step-card">
                     <div class="step-number-badge">03</div>
                     <div class="step-icon">
-                        <!-- SVG Hands/Payment -->
-                        <svg viewBox="0 0 24 24" width="40" height="40" stroke="#2D7A1F" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                            <rect x="2" y="5" width="20" height="14" rx="2"></rect>
-                            <line x1="2" y1="10" x2="22" y2="10"></line>
-                            <circle cx="6" cy="14" r="1"></circle>
-                            <path d="M14 14h4"></path>
+                        <!-- File Text icon -->
+                        <svg viewBox="0 0 24 24" width="36" height="36" stroke="#2D7A1F" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                            <polyline points="14 2 14 8 20 8"></polyline>
+                            <line x1="16" y1="13" x2="8" y2="13"></line>
+                            <line x1="16" y1="17" x2="8" y2="17"></line>
                         </svg>
                     </div>
-                    <h3 class="step-headline">Immediate Settlement</h3>
-                    <p class="step-description">Farmers are paid immediately after quality check. Transport costs are fully covered by Agri Out.</p>
+                    <h3 class="step-headline">Digital Farm Record System</h3>
+                    <p class="step-description">
+                        <strong>Feature:</strong> Tracks crops grown, yield history, input usage, and farming practices per farmer.<br><br>
+                        <strong>Plain meaning:</strong> Every farmer builds a verified track record — their digital farming identity.
+                    </p>
                 </div>
                 
                 <!-- Step 4 -->
                 <div class="step-card">
                     <div class="step-number-badge">04</div>
                     <div class="step-icon">
-                        <!-- SVG Sorting/Warehouse -->
-                        <svg viewBox="0 0 24 24" width="40" height="40" stroke="#8A7A00" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                            <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path>
-                            <polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline>
-                            <line x1="12" y1="22.08" x2="12" y2="12"></line>
+                        <!-- Award icon -->
+                        <svg viewBox="0 0 24 24" width="36" height="36" stroke="#8A7A00" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="12" cy="8" r="7"></circle>
+                            <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline>
                         </svg>
                     </div>
-                    <h3 class="step-headline">Supply Coordination</h3>
-                    <p class="step-description">Verified produce is sorted, packed, and allocated to active institutional orders.</p>
+                    <h3 class="step-headline">QR-Based Quality Certification</h3>
+                    <p class="step-description">
+                        <strong>Feature:</strong> Field inspectors assess produce and issue a portable, QR-code quality certificate — vendor-neutral, owned by the farmer.<br><br>
+                        <strong>Plain meaning:</strong> Farmers carry proof of quality they can present to any mandi, cooperative, exporter, processor, or AgriOut.com — without depending on any single buyer.
+                    </p>
                 </div>
                 
                 <!-- Step 5 -->
                 <div class="step-card">
                     <div class="step-number-badge">05</div>
                     <div class="step-icon">
-                        <!-- SVG Delivery Truck -->
-                        <svg viewBox="0 0 24 24" width="40" height="40" stroke="#2D7A1F" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                            <rect x="1" y="3" width="15" height="13" rx="2" ry="2"></rect>
-                            <polygon points="16 8 20 8 23 11 23 16 16 16 16 8"></polygon>
-                            <circle cx="5.5" cy="18.5" r="2.5"></circle>
-                            <circle cx="18.5" cy="18.5" r="2.5"></circle>
-                        </svg>
-                    </div>
-                    <h3 class="step-headline">Institutional Delivery</h3>
-                    <p class="step-description">Fresh, verified produce reaches hotels, caterers, event kitchens, and food businesses on schedule.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- SECTION 5 — FARMER BENEFITS -->
-    <section class="benefits-section section-padding bg-tint" id="farmers">
-        <div class="container">
-            <div class="section-header text-center scroll-reveal">
-                <span class="section-label">For Farmers</span>
-                <h2 class="section-title">A Partner That Pays On Time, Every Time</h2>
-            </div>
-            
-            <div class="benefits-grid scroll-reveal">
-                <!-- Card 1 -->
-                <div class="benefit-card">
-                    <div class="benefit-icon-box">
-                        <!-- SVG Cash Hand / Settlement -->
-                        <svg viewBox="0 0 24 24" width="28" height="28" stroke="#2D7A1F" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                            <line x1="12" y1="1" x2="12" y2="23"></line>
-                            <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
-                        </svg>
-                    </div>
-                    <h3 class="benefit-title">Immediate Settlement</h3>
-                    <p class="benefit-desc">Payment released the moment your produce passes quality check. No delays, no stress.</p>
-                </div>
-                
-                <!-- Card 2 -->
-                <div class="benefit-card">
-                    <div class="benefit-icon-box">
-                        <!-- SVG Truck / Logistics -->
-                        <svg viewBox="0 0 24 24" width="28" height="28" stroke="#2D7A1F" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                            <rect x="1" y="3" width="15" height="13" rx="2" ry="2"></rect>
-                            <polygon points="16 8 20 8 23 11 23 16 16 16 16 8"></polygon>
-                            <circle cx="5.5" cy="18.5" r="2.5"></circle>
-                            <circle cx="18.5" cy="18.5" r="2.5"></circle>
-                        </svg>
-                    </div>
-                    <h3 class="benefit-title">Transport Covered</h3>
-                    <p class="benefit-desc">We handle and fund all logistics from farm to branch. No transport costs for you.</p>
-                </div>
-                
-                <!-- Card 3 -->
-                <div class="benefit-card">
-                    <div class="benefit-icon-box">
-                        <!-- SVG Chart / Transparent Price -->
-                        <svg viewBox="0 0 24 24" width="28" height="28" stroke="#2D7A1F" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                            <line x1="18" y1="20" x2="18" y2="10"></line>
-                            <line x1="12" y1="20" x2="12" y2="4"></line>
-                            <line x1="6" y1="20" x2="6" y2="14"></line>
-                        </svg>
-                    </div>
-                    <h3 class="benefit-title">Transparent Pricing</h3>
-                    <p class="benefit-desc">No hidden deductions. No middlemen. Clear rate presented directly before procurement.</p>
-                </div>
-                
-                <!-- Card 4 -->
-                <div class="benefit-card">
-                    <div class="benefit-icon-box">
-                        <!-- SVG Handshake / Partnership -->
-                        <svg viewBox="0 0 24 24" width="28" height="28" stroke="#2D7A1F" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                            <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path>
+                        <!-- Users icon -->
+                        <svg viewBox="0 0 24 24" width="36" height="36" stroke="#2D7A1F" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
                             <circle cx="9" cy="7" r="4"></circle>
-                            <path d="M22 21v-2a4 4 0 0 0-3-3.87"></path>
+                            <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
                             <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
                         </svg>
                     </div>
-                    <h3 class="benefit-title">Long-Term Partnership</h3>
-                    <p class="benefit-desc">Consistent, predictable demand for your crops season after season, helping you plan ahead.</p>
+                    <h3 class="step-headline">Farmer Support Network</h3>
+                    <p class="step-description">
+                        <strong>Feature:</strong> Professional agronomists, locally trained Farmer Champions, and government/institutional extension partnerships.<br><br>
+                        <strong>Plain meaning:</strong> Expert help is never more than a call away — from the field to the office.
+                    </p>
                 </div>
                 
-                <!-- Card 5 -->
-                <div class="benefit-card">
-                    <div class="benefit-icon-box">
-                        <!-- SVG Sprout / Agro Support -->
-                        <svg viewBox="0 0 24 24" width="28" height="28" stroke="#2D7A1F" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <!-- Step 6 -->
+                <div class="step-card">
+                    <div class="step-number-badge">06</div>
+                    <div class="step-icon">
+                        <!-- Heart/Sprout icon -->
+                        <svg viewBox="0 0 24 24" width="36" height="36" stroke="#8A7A00" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round">
                             <path d="M12 22V12"></path>
                             <path d="M12 12c0-2.8-2.2-5-5-5S2 9.2 2 12h10z"></path>
                             <path d="M12 12c0-2.8 2.2-5 5-5s5 2.2 5 5H12z"></path>
                         </svg>
                     </div>
-                    <h3 class="benefit-title">Agricultural Support</h3>
-                    <p class="benefit-desc">High-quality input support including seeds, modern equipment, and working capital.</p>
+                    <h3 class="step-headline">Input Recommendations</h3>
+                    <p class="step-description">
+                        <strong>Feature:</strong> Expert guidance on seeds, fertilizers, irrigation methods, crop protection, and modern farming practices.<br><br>
+                        <strong>Plain meaning:</strong> Farmers get advice tailored to their specific crop, soil, and region — not generic tips.
+                    </p>
                 </div>
                 
-                <!-- Card 6 -->
-                <div class="benefit-card">
-                    <div class="benefit-icon-box">
-                        <!-- SVG Location Pin & Operations -->
-                        <svg viewBox="0 0 24 24" width="28" height="28" stroke="#2D7A1F" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
-                            <circle cx="12" cy="10" r="3"></circle>
+                <!-- Step 7 -->
+                <div class="step-card">
+                    <div class="step-number-badge">07</div>
+                    <div class="step-icon">
+                        <!-- Shopping bag / box icon -->
+                        <svg viewBox="0 0 24 24" width="36" height="36" stroke="#2D7A1F" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+                            <polyline points="9 3 9 21"></polyline>
+                            <polyline points="15 3 15 21"></polyline>
+                            <polyline points="3 9 21 9"></polyline>
+                            <polyline points="3 15 21 15"></polyline>
                         </svg>
                     </div>
-                    <h3 class="benefit-title">Field Team Support</h3>
-                    <p class="benefit-desc">Our field operations team comes directly to you — no need to travel or negotiate alone.</p>
+                    <h3 class="step-headline">Input Support Program <span style="font-size:0.75rem; color:var(--accent); font-weight:700;">(Coming Soon)</span></h3>
+                    <p class="step-description">
+                        <strong>Feature:</strong> Direct supply of seeds, fertilizers, and equipment rentals to active, reliable farmers.<br><br>
+                        <strong>Plain meaning:</strong> Support for productive farm inputs — focused on growing better crops, not creating cash dependency.
+                    </p>
                 </div>
-            </div>
-            
-            <div class="benefits-cta text-center scroll-reveal">
-                <a href="#contact" class="btn btn-primary">Become a Supply Partner</a>
+                
+                <!-- Step 8 -->
+                <div class="step-card">
+                    <div class="step-number-badge">08</div>
+                    <div class="step-icon">
+                        <!-- Activity / Track icon -->
+                        <svg viewBox="0 0 24 24" width="36" height="36" stroke="#8A7A00" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline>
+                        </svg>
+                    </div>
+                    <h3 class="step-headline">Input Support Tracking</h3>
+                    <p class="step-description">
+                        <strong>Feature:</strong> Monitors input utilization, crop performance, yield improvement, and farmer reliability score.<br><br>
+                        <strong>Plain meaning:</strong> Outcomes are measured, not assumed — building a trust score that opens doors to better opportunities.
+                    </p>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- SECTION 6 — BUYER BENEFITS -->
-    <section class="benefits-section section-padding" id="buyers">
+    <!-- SECTION 5 — IMPACT METRICS -->
+    <section class="benefits-section section-padding bg-tint" id="metrics" data-nav-id="for-farmers"><span id="for-farmers" style="display:block;position:relative;top:-80px;visibility:hidden;"></span>
         <div class="container">
             <div class="section-header text-center scroll-reveal">
-                <span class="section-label">For Buyers</span>
-                <h2 class="section-title">Reliable Supply. Verified Quality. Direct Source.</h2>
+                <span class="section-label">Impact</span>
+                <h2 class="section-title">Growing Impact, Measurably</h2>
             </div>
             
             <div class="benefits-grid scroll-reveal">
                 <!-- Card 1 -->
-                <div class="benefit-card gold-accent">
-                    <div class="benefit-icon-box gold">
-                        <!-- SVG Store/Farm Direct Sourcing -->
-                        <svg viewBox="0 0 24 24" width="28" height="28" stroke="#8A7A00" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                            <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
-                            <polyline points="9 22 9 12 15 12 15 22"></polyline>
-                        </svg>
-                    </div>
-                    <h3 class="benefit-title">Direct Sourcing</h3>
-                    <p class="benefit-desc">No aggregator markups or margins. Fresh produce sourced straight from verified partner farms.</p>
+                <div class="benefit-card">
+                    <div class="metric-number-display">15,000+</div>
+                    <h3 class="benefit-title" style="font-size: 1.15rem; margin-bottom: 0;">Farmers Supported</h3>
                 </div>
                 
                 <!-- Card 2 -->
-                <div class="benefit-card gold-accent">
-                    <div class="benefit-icon-box gold">
-                        <!-- SVG Quality Verified -->
-                        <svg viewBox="0 0 24 24" width="28" height="28" stroke="#8A7A00" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                            <circle cx="12" cy="12" r="9"></circle>
-                            <polyline points="9 11 12 14 22 4"></polyline>
-                        </svg>
-                    </div>
-                    <h3 class="benefit-title">Quality Verified</h3>
-                    <p class="benefit-desc">Every single batch passes rigorous branch-level quality check before it leaves for dispatch.</p>
+                <div class="benefit-card">
+                    <div class="metric-number-display">25,000+</div>
+                    <h3 class="benefit-title" style="font-size: 1.15rem; margin-bottom: 0;">Acres Monitored</h3>
                 </div>
                 
                 <!-- Card 3 -->
-                <div class="benefit-card gold-accent">
-                    <div class="benefit-icon-box gold">
-                        <!-- SVG Scheduled / Consistent Supply -->
-                        <svg viewBox="0 0 24 24" width="28" height="28" stroke="#8A7A00" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                            <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
-                            <line x1="16" y1="2" x2="16" y2="6"></line>
-                            <line x1="8" y1="2" x2="8" y2="6"></line>
-                            <line x1="3" y1="10" x2="21" y2="10"></line>
-                        </svg>
-                    </div>
-                    <h3 class="benefit-title">Consistent Supply</h3>
-                    <p class="benefit-desc">Scheduled deliveries mapped directly to your operational timelines. Zero supply disruptions.</p>
+                <div class="benefit-card">
+                    <div class="metric-number-display">8,500+</div>
+                    <h3 class="benefit-title" style="font-size: 1.15rem; margin-bottom: 0;">Quality Certificates Issued</h3>
                 </div>
                 
                 <!-- Card 4 -->
-                <div class="benefit-card gold-accent">
-                    <div class="benefit-icon-box gold">
-                        <!-- SVG Fresh Leaf -->
-                        <svg viewBox="0 0 24 24" width="28" height="28" stroke="#8A7A00" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                            <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
-                            <path d="M12 2v20"></path>
-                        </svg>
-                    </div>
-                    <h3 class="benefit-title">Fresh Produce</h3>
-                    <p class="benefit-desc">Harvested and delivered within the shortest possible time-window to preserve freshness.</p>
+                <div class="benefit-card">
+                    <div class="metric-number-display">350+</div>
+                    <h3 class="benefit-title" style="font-size: 1.15rem; margin-bottom: 0;">Active Buyers</h3>
                 </div>
                 
                 <!-- Card 5 -->
-                <div class="benefit-card gold-accent">
-                    <div class="benefit-icon-box gold">
-                        <!-- SVG Efficiency Clipboard -->
-                        <svg viewBox="0 0 24 24" width="28" height="28" stroke="#8A7A00" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
-                            <polyline points="14 2 14 8 20 8"></polyline>
-                            <line x1="16" y1="13" x2="8" y2="13"></line>
-                            <line x1="16" y1="17" x2="8" y2="17"></line>
-                            <polyline points="10 9 9 9 8 9"></polyline>
-                        </svg>
-                    </div>
-                    <h3 class="benefit-title">Operational Efficiency</h3>
-                    <p class="benefit-desc">Predictable farm-to-business supply chain with structured lead times and streamlined logistics.</p>
+                <div class="benefit-card">
+                    <div class="metric-number-display">45,000+</div>
+                    <h3 class="benefit-title" style="font-size: 1.15rem; margin-bottom: 0;">Marketplace Transactions</h3>
                 </div>
                 
                 <!-- Card 6 -->
+                <div class="benefit-card">
+                    <div class="metric-number-display">12+</div>
+                    <h3 class="benefit-title" style="font-size: 1.15rem; margin-bottom: 0;">Input Programs Delivered</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 6 — HOW AGRIOUT.COM WORKS -->
+    <section class="benefits-section section-padding" id="marketplace">
+        <div class="container">
+            <div class="section-header text-center scroll-reveal">
+                <span class="section-label">AgriOut.com — The Marketplace</span>
+                <h2 class="section-title">Where Verified Farmers Meet Serious Buyers</h2>
+                <p class="lead-text" style="max-width: 800px; margin: 0 auto;">
+                    Every farmer on AgriOut.com has been trained, inspected, and certified through AgriOut.org. When you buy here, you know exactly who grew it, how it was grown, and that it meets verified quality standards.
+                </p>
+            </div>
+            
+            <div class="benefits-grid scroll-reveal">
+                <!-- Block 1 -->
                 <div class="benefit-card gold-accent">
                     <div class="benefit-icon-box gold">
-                        <!-- SVG Scale-Ready / Layers -->
+                        <!-- User check icon -->
                         <svg viewBox="0 0 24 24" width="28" height="28" stroke="#8A7A00" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                            <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
-                            <polyline points="2 17 12 22 22 17"></polyline>
-                            <polyline points="2 12 12 17 22 12"></polyline>
+                            <path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                            <circle cx="9" cy="7" r="4"></circle>
+                            <polyline points="16 11 18 13 22 9"></polyline>
                         </svg>
                     </div>
-                    <h3 class="benefit-title">Scale-Ready</h3>
-                    <p class="benefit-desc">Engineered to support daily hotel operations as well as massive, high-volume event procurement.</p>
+                    <h3 class="benefit-title">Verified Farmer Profiles</h3>
+                    <p class="benefit-desc">Every seller profile shows training history, farm records, quality certifications, and reliability score. Know your farmer before you buy.</p>
+                </div>
+                
+                <!-- Block 2 -->
+                <div class="benefit-card gold-accent">
+                    <div class="benefit-icon-box gold">
+                        <!-- QR icon -->
+                        <svg viewBox="0 0 24 24" width="28" height="28" stroke="#8A7A00" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="3" y="3" width="7" height="7"></rect>
+                            <rect x="14" y="3" width="7" height="7"></rect>
+                            <rect x="14" y="14" width="7" height="7"></rect>
+                            <rect x="3" y="14" width="7" height="7"></rect>
+                        </svg>
+                    </div>
+                    <h3 class="benefit-title">Quality-Certified Listings</h3>
+                    <p class="benefit-desc">Every produce listing is backed by an AgriOut QR quality certificate. No unverified claims.</p>
+                </div>
+                
+                <!-- Block 3 -->
+                <div class="benefit-card gold-accent">
+                    <div class="benefit-icon-box gold">
+                        <!-- Shopping Cart / Volume icon -->
+                        <svg viewBox="0 0 24 24" width="28" height="28" stroke="#8A7A00" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="9" cy="21" r="1"></circle>
+                            <circle cx="20" cy="21" r="1"></circle>
+                            <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+                        </svg>
+                    </div>
+                    <h3 class="benefit-title">Bulk Procurement & Contract Farming</h3>
+                    <p class="benefit-desc">Place large orders with structured contract terms, directly with farmers — no broker, no markup.</p>
+                </div>
+                
+                <!-- Block 4 -->
+                <div class="benefit-card gold-accent">
+                    <div class="benefit-icon-box gold">
+                        <!-- Chat icon -->
+                        <svg viewBox="0 0 24 24" width="28" height="28" stroke="#8A7A00" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="benefit-title">Real-Time Buyer Inquiries</h3>
+                    <p class="benefit-desc">Message farmers directly, negotiate pricing, and confirm quality — all within the platform.</p>
+                </div>
+                
+                <!-- Block 5 -->
+                <div class="benefit-card gold-accent">
+                    <div class="benefit-icon-box gold">
+                        <!-- Truck icon -->
+                        <svg viewBox="0 0 24 24" width="28" height="28" stroke="#8A7A00" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="1" y="3" width="15" height="13" rx="2" ry="2"></rect>
+                            <polygon points="16 8 20 8 23 11 23 16 16 16 16 8"></polygon>
+                            <circle cx="5.5" cy="18.5" r="2.5"></circle>
+                            <circle cx="18.5" cy="18.5" r="2.5"></circle>
+                        </svg>
+                    </div>
+                    <h3 class="benefit-title">Logistics Coordination</h3>
+                    <p class="benefit-desc">End-to-end delivery management built into every order. From farm to destination.</p>
+                </div>
+                
+                <!-- Block 6 -->
+                <div class="benefit-card gold-accent">
+                    <div class="benefit-icon-box gold">
+                        <!-- Credit card / payment icon -->
+                        <svg viewBox="0 0 24 24" width="28" height="28" stroke="#8A7A00" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="2" y="5" width="20" height="14" rx="2"></rect>
+                            <line x1="2" y1="10" x2="22" y2="10"></line>
+                        </svg>
+                    </div>
+                    <h3 class="benefit-title">Digital Payments & Order Tracking</h3>
+                    <p class="benefit-desc">Secure, traceable transactions with full order history for both parties.</p>
                 </div>
             </div>
             
-            <div class="benefits-cta text-center scroll-reveal">
-                <a href="#contact" class="btn btn-primary">Partner With Us</a>
+            <!-- Farmer & Buyer Benefits Strip -->
+            <div class="marketplace-benefits scroll-reveal" style="margin-top: 48px;">
+                <div class="benefit-strip-card farmer-benefit">
+                    <span class="badge-mini primary">Farmer Benefit</span>
+                    <p>Better price realization. Wider buyer network. Your quality — proven, seen, and rewarded.</p>
+                </div>
+                <div class="benefit-strip-card buyer-benefit">
+                    <span class="badge-mini gold">Buyer Benefit</span>
+                    <p>Certified produce. Trusted farmers. Transparent transactions. No surprises.</p>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- SECTION 7 — SUPPLY CHAIN FLOW -->
-    <section class="flow-section section-padding bg-tint">
+    <!-- SECTION 8 — WHO IS AGRIOUT FOR -->
+    <section class="industries-section section-padding bg-tint" id="audience">
         <div class="container">
             <div class="section-header text-center scroll-reveal">
-                <span class="section-label">The Network</span>
-                <h2 class="section-title">End-To-End Agricultural Supply Infrastructure</h2>
+                <span class="section-label">Our Ecosystem Network</span>
+                <h2 class="section-title">Built for Everyone in Agriculture</h2>
             </div>
             
-            <div class="flow-container scroll-reveal">
-                <!-- Node 1: Farmers -->
-                <div class="flow-node node-farmer">
-                    <div class="node-icon">
-                        <svg viewBox="0 0 24 24" width="32" height="32" stroke="#2D7A1F" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                            <path d="M12 22V12"></path>
-                            <path d="M12 12c0-2.8-2.2-5-5-5S2 9.2 2 12h10z"></path>
-                        </svg>
+            <div class="industries-grid scroll-reveal" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 24px;">
+                <!-- Farmer Card -->
+                <div class="industry-card" style="display: flex; flex-direction: column; justify-content: space-between; height: 100%;">
+                    <div>
+                        <div class="industry-icon">
+                            <!-- Farmer sprout icon -->
+                            <svg viewBox="0 0 24 24" width="32" height="32" stroke="#2D7A1F" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M12 22V12"></path>
+                                <path d="M12 12c0-2.8-2.2-5-5-5S2 9.2 2 12h10z"></path>
+                            </svg>
+                        </div>
+                        <h3 class="industry-name">For Farmers</h3>
+                        <p class="industry-desc" style="margin-bottom: 24px;">Join AgriOut.org free. Get trained, certified, and connected to buyers who pay what your crop is truly worth.</p>
                     </div>
-                    <div class="node-content">
-                        <h4 class="node-title">Partner Farmers</h4>
-                        <p class="node-desc">Sourcing high-quality raw crops</p>
-                    </div>
+                    <a href="#contact" class="btn btn-primary" style="width: 100%; font-size: 0.9rem; padding: 10px 16px;">Join as a Farmer</a>
                 </div>
 
-                <div class="flow-connector">
-                    <div class="connector-line"></div>
+                <!-- Buyer Card -->
+                <div class="industry-card" style="display: flex; flex-direction: column; justify-content: space-between; height: 100%;">
+                    <div>
+                        <div class="industry-icon">
+                            <!-- Buyer briefcase icon -->
+                            <svg viewBox="0 0 24 24" width="32" height="32" stroke="#8A7A00" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+                                <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+                            </svg>
+                        </div>
+                        <h3 class="industry-name">For Buyers, Processors & Exporters</h3>
+                        <p class="industry-desc" style="margin-bottom: 24px;">Source directly from verified, quality-certified farmers. Reduce procurement risk. Build reliable supply chains.</p>
+                    </div>
+                    <a href="#marketplace" class="btn btn-accent" style="width: 100%; font-size: 0.9rem; padding: 10px 16px;">Explore the Marketplace</a>
                 </div>
 
-                <!-- Node 2: Field Procurement -->
-                <div class="flow-node node-neutral">
-                    <div class="node-icon">
-                        <svg viewBox="0 0 24 24" width="32" height="32" stroke="#4D5F4A" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                            <circle cx="12" cy="12" r="10"></circle>
-                            <polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"></polygon>
-                        </svg>
+                <!-- Coordinator Card -->
+                <div class="industry-card" style="display: flex; flex-direction: column; justify-content: space-between; height: 100%;">
+                    <div>
+                        <div class="industry-icon">
+                            <!-- Coordinator network/users icon -->
+                            <svg viewBox="0 0 24 24" width="32" height="32" stroke="#2D7A1F" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                                <circle cx="9" cy="7" r="4"></circle>
+                                <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                            </svg>
+                        </div>
+                        <h3 class="industry-name">For Coordinators & Agronomists</h3>
+                        <p class="industry-desc" style="margin-bottom: 24px;">Become a Farmer Champion. Support farmers in your region, deliver last-mile assistance, and earn while creating impact.</p>
                     </div>
-                    <div class="node-content">
-                        <h4 class="node-title">Field Procurement</h4>
-                        <p class="node-desc">Village-level team sourcing</p>
-                    </div>
+                    <a href="#contact" class="btn btn-primary" style="width: 100%; font-size: 0.9rem; padding: 10px 16px;">Become a Coordinator</a>
                 </div>
 
-                <div class="flow-connector">
-                    <div class="connector-line"></div>
-                </div>
-
-                <!-- Node 3: Branch Verification -->
-                <div class="flow-node node-neutral">
-                    <div class="node-icon">
-                        <svg viewBox="0 0 24 24" width="32" height="32" stroke="#4D5F4A" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                            <path d="M22 10v6M2 10v6M12 2v20M2 10h20"></path>
-                        </svg>
+                <!-- Investor Card -->
+                <div class="industry-card" style="display: flex; flex-direction: column; justify-content: space-between; height: 100%;">
+                    <div>
+                        <div class="industry-icon">
+                            <!-- Investor handshake/globe icon -->
+                            <svg viewBox="0 0 24 24" width="32" height="32" stroke="#8A7A00" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+                            </svg>
+                        </div>
+                        <h3 class="industry-name">For Investors & Partners</h3>
+                        <p class="industry-desc" style="margin-bottom: 24px;">Partner with AgriOut to build the trust infrastructure that agriculture has been missing for decades.</p>
                     </div>
-                    <div class="node-content">
-                        <h4 class="node-title">Branch Verification</h4>
-                        <p class="node-desc">Standardised quality verification</p>
-                    </div>
-                </div>
-
-                <div class="flow-connector">
-                    <div class="connector-line"></div>
-                </div>
-
-                <!-- Node 4: Supply Coordination -->
-                <div class="flow-node node-neutral">
-                    <div class="node-icon">
-                        <svg viewBox="0 0 24 24" width="32" height="32" stroke="#4D5F4A" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                            <path d="M4 4h16v16H4zM4 12h16M12 4v16"></path>
-                        </svg>
-                    </div>
-                    <div class="node-content">
-                        <h4 class="node-title">Supply Coordination</h4>
-                        <p class="node-desc">Order sorting and scheduling</p>
-                    </div>
-                </div>
-
-                <div class="flow-connector">
-                    <div class="connector-line"></div>
-                </div>
-
-                <!-- Node 5: Buyers -->
-                <div class="flow-node node-buyer">
-                    <div class="node-icon">
-                        <svg viewBox="0 0 24 24" width="32" height="32" stroke="#8A7A00" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                            <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
-                            <path d="M9 3v18M15 3v18M3 9h18M3 15h18"></path>
-                        </svg>
-                    </div>
-                    <div class="node-content">
-                        <h4 class="node-title">Institutional Buyers</h4>
-                        <p class="node-desc">Hotels, caterers & scale operations</p>
-                    </div>
+                    <a href="#contact" class="btn btn-accent" style="width: 100%; font-size: 0.9rem; padding: 10px 16px;">Partner With Us</a>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- SECTION 8 — INDUSTRIES WE SERVE -->
-    <section class="industries-section section-padding" id="industries">
+    <!-- SECTION 10 — VISION -->
+    <section class="vision-section section-padding" id="vision">
         <div class="container">
-            <div class="section-header text-center scroll-reveal">
-                <span class="section-label">Industries</span>
-                <h2 class="section-title">Built For Every Institutional Food Operation</h2>
+            <div class="section-header text-center scroll-reveal" style="max-width: 800px; margin: 0 auto 40px auto;">
+                <span class="section-label">Our Vision</span>
+                <h2 class="section-title">Building the Trust Infrastructure for Agriculture</h2>
             </div>
             
-            <div class="industries-grid scroll-reveal">
-                <!-- Card 1 -->
-                <div class="industry-card">
-                    <div class="industry-icon">
-                        <!-- SVG Hotel/Restaurant -->
-                        <svg viewBox="0 0 24 24" width="32" height="32" stroke="#2D7A1F" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                            <rect x="2" y="2" width="20" height="20" rx="2" ry="2"></rect>
-                            <path d="M9 22V12h6v10M12 2v10M5 7h2M17 7h2M5 12h2M17 12h2"></path>
-                        </svg>
-                    </div>
-                    <h3 class="industry-name">Hotels & Restaurants</h3>
-                    <p class="industry-desc">Daily fresh produce supply with consistent scheduling and strict grade parameters.</p>
-                </div>
-
-                <!-- Card 2 -->
-                <div class="industry-card">
-                    <div class="industry-icon">
-                        <!-- SVG Catering Cloche -->
-                        <svg viewBox="0 0 24 24" width="32" height="32" stroke="#8A7A00" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                            <path d="M2 18h20a1 1 0 0 0 1-1 7 7 0 0 0-14 0 1 1 0 0 0 1 1zM12 2v3M9 5h6"></path>
-                            <line x1="2" y1="21" x2="22" y2="21"></line>
-                        </svg>
-                    </div>
-                    <h3 class="industry-name">Catering Services</h3>
-                    <p class="industry-desc">Bulk procurement for regular large-format operations. Scalable order coordination.</p>
-                </div>
-
-                <!-- Card 3 -->
-                <div class="industry-card">
-                    <div class="industry-icon">
-                        <!-- SVG Events / Sparkles -->
-                        <svg viewBox="0 0 24 24" width="32" height="32" stroke="#2D7A1F" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                            <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path>
-                        </svg>
-                    </div>
-                    <h3 class="industry-name">Events & Functions</h3>
-                    <p class="industry-desc">Scale supply for weddings, community events, and large institutional gatherings.</p>
-                </div>
-
-                <!-- Card 4 -->
-                <div class="industry-card">
-                    <div class="industry-icon">
-                        <!-- SVG Kitchen / Pot -->
-                        <svg viewBox="0 0 24 24" width="32" height="32" stroke="#8A7A00" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                            <path d="M6 10h12v10a2 2 0 0 1-2 2H8a2 2 0 0 1-2-2V10z"></path>
-                            <path d="M4 6h16a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1z"></path>
-                            <path d="M12 2v4"></path>
-                        </svg>
-                    </div>
-                    <h3 class="industry-name">Community Kitchens</h3>
-                    <p class="industry-desc">Reliable sourcing for high-volume daily cooking operations with predictable, locked-in pricing.</p>
-                </div>
-
-                <!-- Card 5 -->
-                <div class="industry-card">
-                    <div class="industry-icon">
-                        <!-- SVG Food Business / Factory -->
-                        <svg viewBox="0 0 24 24" width="32" height="32" stroke="#2D7A1F" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                            <path d="M17 21v-4a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v4"></path>
-                            <rect x="3" y="1" width="18" height="12" rx="2" ry="2"></rect>
-                            <path d="M21 21v-8"></path>
-                        </svg>
-                    </div>
-                    <h3 class="industry-name">Food Businesses</h3>
-                    <p class="industry-desc">Wholesale fresh inputs for large-scale processing, ready-to-eat brands, and preparation.</p>
-                </div>
-
-                <!-- Card 6 -->
-                <div class="industry-card">
-                    <div class="industry-icon">
-                        <!-- SVG Retail / Shopping Bag -->
-                        <svg viewBox="0 0 24 24" width="32" height="32" stroke="#8A7A00" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                            <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
-                            <line x1="3" y1="6" x2="21" y2="6"></line>
-                            <path d="M16 10a4 4 0 0 1-8 0"></path>
-                        </svg>
-                    </div>
-                    <h3 class="industry-name">Retail Supply Networks</h3>
-                    <p class="industry-desc">Regular stock replenishment for organized retail chains, supermarkets, and specialty grocers.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- SECTION 9 — AGRICULTURAL SUPPORT PROGRAMS -->
-    <section class="support-section section-padding bg-tint">
-        <div class="container">
-            <div class="support-grid grid-50-50 align-center">
-                <div class="support-content scroll-reveal">
-                    <span class="section-label">Partner Program</span>
-                    <h2 class="section-title">We Invest In The Farmers Who Supply With Us</h2>
-                    <p class="lead-text">
-                        Agri Out's agricultural support program is available to long-term supply partners. 
+            <div class="vision-body-content scroll-reveal" style="max-width: 850px; margin: 0 auto; text-align: center;">
+                <p class="lead-text" style="font-size: 1.3rem; margin-bottom: 24px; color: var(--text-primary); font-weight: 500; line-height: 1.6;">
+                    Today, a farmer's quality is invisible to the market. Their knowledge is limited by access. Their prices are controlled by intermediaries they cannot bypass.
+                </p>
+                <p class="body-text" style="font-size: 1.15rem; margin-bottom: 24px; color: var(--text-secondary); line-height: 1.7;">
+                    AgriOut is building the infrastructure to change all three — permanently.
+                </p>
+                <p class="body-text" style="font-size: 1.15rem; margin-bottom: 24px; color: var(--text-secondary); line-height: 1.7;">
+                    Through <strong>AgriOut.org</strong>, every farmer gains the knowledge, credentials, and digital identity they deserve. Through <strong>AgriOut.com</strong>, that identity becomes purchasing power — connecting them directly to buyers who value quality and pay accordingly.
+                </p>
+                <p class="lead-text" style="font-size: 1.3rem; margin-bottom: 36px; color: var(--text-primary); font-weight: 600; line-height: 1.6;">
+                    Our long-term vision is simple: a transparent agricultural ecosystem where no farmer is left behind, and no buyer is left guessing.
+                </p>
+                
+                <div class="vision-tagline" style="margin-top: 56px; border-top: 1px solid rgba(45, 122, 31, 0.1); padding-top: 36px;">
+                    <p style="font-family: var(--font-heading); font-size: 2rem; font-weight: 800; color: var(--accent); font-style: italic;">
+                        "Sourcing from Farmers, Serving with Trust."
                     </p>
-                    <p class="body-text">
-                        After establishing a consistent supply relationship, partner farmers become eligible for structured support — including access to quality seeds, equipment, and working capital assistance.
-                    </p>
-                    <p class="body-text">
-                        All support is monitored through our field operations team with regular farm visits and supply tracking. This is not charity — it is infrastructure investment in the people who power our network.
-                    </p>
-                    
-                    <div class="program-highlights">
-                        <div class="highlight-item">
-                            <div class="highlight-check">✓</div>
-                            <span>Input Support</span>
-                        </div>
-                        <div class="highlight-item">
-                            <div class="highlight-check">✓</div>
-                            <span>Equipment Access</span>
-                        </div>
-                        <div class="highlight-item">
-                            <div class="highlight-check">✓</div>
-                            <span>Working Capital Assistance</span>
-                        </div>
-                    </div>
-                    
-                    <div class="support-cta-wrap">
-                        <a href="#contact" class="btn btn-primary">Partner Today</a>
-                    </div>
-                </div>
-                <div class="support-visual scroll-reveal">
-                    <img src="support_program.png" alt="Agricultural support program illustration" class="support-img">
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- SECTION 10 — FUTURE VISION -->
-    <section class="vision-section section-padding">
-        <div class="container">
-            <div class="section-header text-center scroll-reveal">
-                <span class="section-label">What's Next</span>
-                <h2 class="section-title">Scaling Rural Infrastructure Across India</h2>
-            </div>
-            
-            <div class="vision-grid scroll-reveal">
-                <!-- Roadmap Item 1 -->
-                <div class="vision-card">
-                    <div class="vision-icon">
-                        <svg viewBox="0 0 24 24" width="28" height="28" stroke="#2D7A1F" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                            <ellipse cx="12" cy="5" rx="9" ry="3"></ellipse>
-                            <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path>
-                        </svg>
-                    </div>
-                    <h3 class="vision-title">Grains & Pulses</h3>
-                    <p class="vision-desc">Expanding operations to procure and deliver durable staples direct from field to scale buyers.</p>
-                </div>
-
-                <!-- Roadmap Item 2 -->
-                <div class="vision-card">
-                    <div class="vision-icon">
-                        <svg viewBox="0 0 24 24" width="28" height="28" stroke="#2D7A1F" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                            <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
-                        </svg>
-                    </div>
-                    <h3 class="vision-title">Dairy Supply Networks</h3>
-                    <p class="vision-desc">Creating village-level temperature-controlled dairy collection and bulk logistics paths.</p>
-                </div>
-
-                <!-- Roadmap Item 3 -->
-                <div class="vision-card">
-                    <div class="vision-icon">
-                        <svg viewBox="0 0 24 24" width="28" height="28" stroke="#2D7A1F" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                            <circle cx="12" cy="12" r="10"></circle>
-                            <path d="M8 12h8M12 8v8"></path>
-                        </svg>
-                    </div>
-                    <h3 class="vision-title">Spices & Dry Commodities</h3>
-                    <p class="vision-desc">Standardizing quality checks for value-added processed crops, seeds, and spices.</p>
-                </div>
-
-                <!-- Roadmap Item 4 -->
-                <div class="vision-card">
-                    <div class="vision-icon">
-                        <svg viewBox="0 0 24 24" width="28" height="28" stroke="#2D7A1F" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                            <path d="M3 12h18M3 6h18M3 18h18"></path>
-                        </svg>
-                    </div>
-                    <h3 class="vision-title">Village Procurement Centres</h3>
-                    <p class="vision-desc">Setting up local drop points in production hubs to simplify delivery for partner farmers.</p>
-                </div>
-
-                <!-- Roadmap Item 5 -->
-                <div class="vision-card">
-                    <div class="vision-icon">
-                        <svg viewBox="0 0 24 24" width="28" height="28" stroke="#2D7A1F" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                            <path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
-                        </svg>
-                    </div>
-                    <h3 class="vision-title">Cold Chain Infrastructure</h3>
-                    <p class="vision-desc">Deploying modular refrigerated trucks and storage branches to expand fresh delivery windows.</p>
-                </div>
-
-                <!-- Roadmap Item 6 -->
-                <div class="vision-card">
-                    <div class="vision-icon">
-                        <svg viewBox="0 0 24 24" width="28" height="28" stroke="#2D7A1F" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                            <path d="M12 22s-8-4.5-8-11.8A8 8 0 0 1 12 2a8 8 0 0 1 8 8.2c0 7.3-8 11.8-8 11.8z"></path>
-                            <circle cx="12" cy="10" r="3"></circle>
-                        </svg>
-                    </div>
-                    <h3 class="vision-title">Pan-India Distribution</h3>
-                    <p class="vision-desc">Connecting primary production zones directly to urban institutional demand corridors.</p>
                 </div>
             </div>
         </div>
@@ -755,9 +1116,9 @@
         <div class="container">
             <div class="contact-card-wrapper scroll-reveal">
                 <div class="contact-cta-info">
-                    <h2 class="contact-title">Join India's Next Rural Supply Network</h2>
+                    <h2 class="contact-title">Join the AgriOut Ecosystem</h2>
                     <p class="contact-subtitle">
-                        Whether you're a partner farmer seeking consistent demand or a business needing reliable fresh supply — Agri Out is built for you. Complete the partner registration form, and our field team will reach out directly.
+                        Whether you are a farmer looking to build credibility through AgriOut.org, a buyer looking to source certified produce from AgriOut.com, or a partner wanting to build trust in agriculture — we are ready. Complete the registration form, and our team will reach out directly.
                     </p>
                     
                     <div class="contact-bullets">
@@ -792,18 +1153,20 @@
                             <label for="formType" class="form-label">I want to partner as a:</label>
                             <select id="formType" name="type" class="form-input select-input" required>
                                 <option value="" disabled selected>Select partner type</option>
-                                <option value="Farmer">Supply Partner (Farmer)</option>
-                                <option value="Buyer">Institutional Buyer</option>
+                                <option value="Farmer">Farmer (Join AgriOut.org)</option>
+                                <option value="Buyer">Buyer (Explore AgriOut.com)</option>
+                                <option value="Coordinator">Coordinator / Farmer Champion</option>
+                                <option value="Partner">Investor / Strategic Partner</option>
                             </select>
                         </div>
                         
                         <div class="form-group">
                             <label for="formMessage" class="form-label">Message / Details</label>
-                            <textarea id="formMessage" name="message" class="form-input textarea-input" rows="4" placeholder="How can we partner? Include crops, volume, or location details..." required></textarea>
+                            <textarea id="formMessage" name="message" class="form-input textarea-input" rows="4" placeholder="How can we partner? Include crop, volume, or location details..." required></textarea>
                         </div>
                         
                         <button type="submit" class="btn btn-primary btn-block" id="submitBtn">
-                            <span class="btn-text">Submit Partner Registration</span>
+                            <span class="btn-text">Submit Registration</span>
                             <span class="btn-loader"></span>
                         </button>
                     </form>
@@ -811,7 +1174,7 @@
                     <div class="success-message" id="successMessage">
                         <div class="success-icon">✓</div>
                         <h3 class="success-title">Registration Submitted</h3>
-                        <p class="success-desc">Thank you for registering. Our field operations team will review your details and contact you shortly.</p>
+                        <p class="success-desc">Thank you for registering. Our team will review your details and contact you shortly.</p>
                     </div>
                 </div>
             </div>
@@ -824,30 +1187,41 @@
             <!-- Column 1 -->
             <div class="footer-col col-brand">
                 <a href="#home" class="footer-logo">
-                    <img src="logo.png" alt="Agri Out Icon" class="logo-icon">
-                    <img src="text.png" alt="Agri Out Wordmark" class="logo-text">
+                    <img src="logo.png" alt="AgriOut Icon" class="logo-icon">
+                    <img src="text.png" alt="AgriOut Wordmark" class="logo-text">
                 </a>
                 <p class="brand-statement">
-                    Building transparent agricultural supply chains across rural India. Connecting farms directly with institutional markets.
+                    "Sourcing from Farmers, Serving with Trust"
                 </p>
             </div>
 
             <!-- Column 2 -->
             <div class="footer-col">
-                <h4 class="footer-title">Quick Links</h4>
+                <h4 class="footer-title">AgriOut.org</h4>
                 <ul class="footer-links">
-                    <li><a href="#about">About Who We Are</a></li>
-                    <li><a href="#process">How Our Sourcing Works</a></li>
-                    <li><a href="#farmers">For Partner Farmers</a></li>
-                    <li><a href="#buyers">For Institutional Buyers</a></li>
-                    <li><a href="#industries">Served Industries</a></li>
-                    <li><a href="#contact">Contact & Partner Form</a></li>
+                    <li><a href="#about">About AgriOut.org</a></li>
+                    <li><a href="#audience">For Farmers</a></li>
+                    <li><a href="#audience">For Coordinators</a></li>
+                    <li><a href="#process">Quality Certification</a></li>
+                    <li><a href="#process">Farmer Education</a></li>
                 </ul>
             </div>
 
             <!-- Column 3 -->
             <div class="footer-col">
-                <h4 class="footer-title">Contact Us</h4>
+                <h4 class="footer-title">AgriOut.com</h4>
+                <ul class="footer-links">
+                    <li><a href="#about">About AgriOut.com</a></li>
+                    <li><a href="#audience">For Buyers</a></li>
+                    <li><a href="#marketplace">Marketplace</a></li>
+                    <li><a href="#marketplace">Bulk Procurement</a></li>
+                    <li><a href="#marketplace">Verified Listings</a></li>
+                </ul>
+            </div>
+
+            <!-- Column 4 -->
+            <div class="footer-col">
+                <h4 class="footer-title">Contact & Support</h4>
                 <p class="contact-item">
                     <strong>Website:</strong> <a href="https://agriout.org">agriout.org</a>
                 </p>
@@ -860,25 +1234,28 @@
                     Palnadu(dist), Andhra Pradesh(State)<br>
                     India
                 </p>
-            </div>
-
-            <!-- Column 4 -->
-            <div class="footer-col">
-                <h4 class="footer-title">Connect With Us</h4>
-                <div class="social-links">
+                <div class="social-links" style="margin-top: 16px; display: flex; gap: 20px;">
                     <!-- WhatsApp -->
-                    <a href="https://wa.me/+917013014131" class="social-icon-link" aria-label="WhatsApp Link">
+                    <a href="https://wa.me/+917013014131" target="_blank" rel="noopener noreferrer" class="social-icon-link" aria-label="WhatsApp Link" style="display: inline-flex; align-items: flex-start; gap: 2px;">
                         <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                             <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path>
+                        </svg>
+                        <svg viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="external-arrow" style="opacity: 0.8; margin-top: -3px;">
+                            <line x1="7" y1="17" x2="17" y2="7"></line>
+                            <polyline points="7 7 17 7 17 17"></polyline>
                         </svg>
                     </a>
                     
                     <!-- Instagram -->
-                    <a href="https://www.instagram.com/agrioutorg?igsh=MWx0d3N3dHdsMWw5YQ==" class="social-icon-link" aria-label="Instagram Link">
+                    <a href="https://www.instagram.com/agrioutorg?igsh=MWx0d3N3dHdsMWw5YQ==" target="_blank" rel="noopener noreferrer" class="social-icon-link" aria-label="Instagram Link" style="display: inline-flex; align-items: flex-start; gap: 2px;">
                         <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                             <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
                             <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
                             <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                        </svg>
+                        <svg viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="external-arrow" style="opacity: 0.8; margin-top: -3px;">
+                            <line x1="7" y1="17" x2="17" y2="7"></line>
+                            <polyline points="7 7 17 7 17 17"></polyline>
                         </svg>
                     </a>
                 </div>
@@ -887,14 +1264,17 @@
 
         <div class="footer-bottom">
             <div class="container footer-bottom-container">
-                <p class="copyright">© 2024 Agri Out. All rights reserved.</p>
+                <p class="copyright">© 2026 AgriOut Ecosystem | AgriOut.org + AgriOut.com | All rights reserved.</p>
+                <p class="copyright" style="font-size: 0.85rem; color: var(--text-muted); margin-top: 4px;">Building trust between farmers and markets.</p>
                 <div class="legal-links">
-                    <a href="#">Privacy Policy</a>
-                    <a href="#">Terms of Service</a>
+                    <a href="#" id="openPrivacy">Privacy Policy</a>
+                    <a href="#" id="openTerms">Terms of Service</a>
                 </div>
             </div>
         </div>
     </footer>
+
+
 
     <!-- FLOATING ACTIONS CONTAINER -->
     <div class="floating-actions">
@@ -905,14 +1285,95 @@
                 <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
                 <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
             </svg>
+            <div class="floating-arrow">
+                <svg viewBox="0 0 24 24" width="10" height="10" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="7" y1="17" x2="17" y2="7"></line>
+                    <polyline points="7 7 17 7 17 17"></polyline>
+                </svg>
+            </div>
         </a>
-        
+
         <!-- WhatsApp Link -->
         <a href="https://wa.me/+917013014131" class="floating-btn floating-whatsapp" target="_blank" rel="noopener noreferrer" aria-label="Chat on WhatsApp">
             <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                 <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path>
             </svg>
+            <div class="floating-arrow">
+                <svg viewBox="0 0 24 24" width="10" height="10" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="7" y1="17" x2="17" y2="7"></line>
+                    <polyline points="7 7 17 7 17 17"></polyline>
+                </svg>
+            </div>
         </a>
+    </div>
+
+    <!-- MODAL FOR PRIVACY POLICY -->
+    <div id="privacyModal" class="modal-overlay">
+        <div class="modal-card">
+            <button class="modal-close" id="closePrivacy" aria-label="Close privacy modal">&times;</button>
+            <div class="modal-header">
+                <h2 class="modal-title">Privacy Policy</h2>
+                <p class="modal-subtitle">Last updated: June 2025</p>
+            </div>
+            <div class="modal-body">
+                <h3>Information We Collect</h3>
+                <p>We collect name, phone number, location, farm details, and produce information provided during registration.</p>
+                
+                <h3>How We Use Your Information</h3>
+                <p>To provide AgriOut.org services, facilitate AgriOut.com transactions, send alerts, and improve platform experience.</p>
+                
+                <h3>Information Sharing</h3>
+                <p>We do not sell personal data. Farmer profiles are shared on AgriOut.com only with consent. Data shared with logistics and payment partners only to fulfill orders.</p>
+                
+                <h3>Data Security</h3>
+                <p>All data is encrypted and stored securely using industry-standard practices.</p>
+                
+                <h3>Your Rights</h3>
+                <p>Request access, correction, or deletion of your data anytime.</p>
+                
+                <h3>Cookies</h3>
+                <p>We use cookies to improve site performance. Disable anytime in browser settings.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- MODAL FOR TERMS OF SERVICE -->
+    <div id="termsModal" class="modal-overlay">
+        <div class="modal-card">
+            <button class="modal-close" id="closeTerms" aria-label="Close terms modal">&times;</button>
+            <div class="modal-header">
+                <h2 class="modal-title">Terms of Service</h2>
+                <p class="modal-subtitle">Last updated: June 2025</p>
+            </div>
+            <div class="modal-body">
+                <h3>Acceptance</h3>
+                <p>By using AgriOut.org or AgriOut.com you agree to these terms.</p>
+                
+                <h3>Platform Description</h3>
+                <p>AgriOut.org is a farmer development platform. AgriOut.com is a commercial marketplace for verified farmers and buyers. Both operate under the AgriOut Ecosystem.</p>
+                
+                <h3>Farmer Responsibilities</h3>
+                <p>Provide accurate information. Only AgriOut.org-verified farmers may list on AgriOut.com. Misrepresentation leads to account suspension.</p>
+                
+                <h3>Buyer Responsibilities</h3>
+                <p>Honor confirmed orders. Make payments via AgriOut.com. Raise disputes within 48 hours of delivery.</p>
+                
+                <h3>Quality Certification</h3>
+                <p>Certificates are issued at time of field inspection. AgriOut is not responsible for post-certification changes during transit.</p>
+                
+                <h3>Prohibited Activities</h3>
+                <p>No fraudulent listings, price manipulation, user harassment, or illegal activity.</p>
+                
+                <h3>Intellectual Property</h3>
+                <p>All AgriOut branding and content is our intellectual property. No reproduction without written permission.</p>
+                
+                <h3>Limitation of Liability</h3>
+                <p>AgriOut is not liable for transaction disputes, logistics delays, or post-certification quality changes.</p>
+                
+                <h3>Changes</h3>
+                <p>Continued use of the platform means acceptance of any updated terms.</p>
+            </div>
+        </div>
     </div>
 
     <!-- Scripts -->
